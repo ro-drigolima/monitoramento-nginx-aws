@@ -19,18 +19,18 @@ Este projeto tem como finalidade a configuração de um ambiente Linux na AWS co
 ## 1. Criação da VPC
 
 Procure por **VPC** na barra de pesquisa da AWS → **Create VPC**  
-<p align="center"><img src="image.png" width="60%"></p>
-<p align="center"><img src="image-1.png" width="60%"></p>
+<p align="center"><img src="imagens/image.png" width="60%"></p>
+<p align="center"><img src="imagens/image-1.png" width="60%"></p>
 
 Configurações da VPC:
 
 <div align="center">
-  <img src="image-2.png" width="45%" />
-  <img src="image-3.png" width="45%" />
+  <img src="imagens/image-2.png" width="45%" />
+  <img src="imagens/image-3.png" width="45%" />
 </div>
 
 Clique em **Create VPC**.  
-<p align="center"><img src="image-4.png" width="60%"></p>
+<p align="center"><img src="imagens/image-4.png" width="60%"></p>
 
 ---
 
@@ -39,35 +39,35 @@ Clique em **Create VPC**.
 Procure por **EC2** na barra de pesquisa da AWS → **Launch Instance**
 
 <div align="center">
-  <img src="image-5.png" width="45%" />
-  <img src="image-6.png" width="45%" />
+  <img src="imagens/image-5.png" width="45%" />
+  <img src="imagens/image-6.png" width="45%" />
 </div>
 
-<p align="center"><img src="image-7.png" width="60%"></p>
-<p align="center"><img src="image-8.png" width="60%"></p>
+<p align="center"><img src="imagens/image-7.png" width="60%"></p>
+<p align="center"><img src="imagens/image-8.png" width="60%"></p>
 
 Criação da chave SSH para login na instância:  
-<p align="center"><img src="image-9.png" width="60%"></p>
-<p align="center"><img src="image-10.png" width="60%"></p>
+<p align="center"><img src="imagens/image-9.png" width="60%"></p>
+<p align="center"><img src="imagens/image-10.png" width="60%"></p>
 
 Configurações de rede:
 - Selecione a VPC criada
 - Selecione uma sub-rede pública
 - Ative a opção **Auto-assign public IP**
-<p align="center"><img src="image-11.png" width="60%"></p>
+<p align="center"><img src="imagens/image-11.png" width="60%"></p>
 
 Criação de um Security Group:
-<p align="center"><img src="image-12.png" width="60%"></p>
+<p align="center"><img src="imagens/image-12.png" width="60%"></p>
 
 Regras de segurança:
-<p align="center"><img src="image-13.png" width="60%"></p>
+<p align="center"><img src="imagens/image-13.png" width="60%"></p>
 
 Outras configurações e resumo:
-<p align="center"><img src="image-14.png" width="60%"></p>
-<p align="center"><img src="image-15.png" width="60%"></p>
+<p align="center"><img src="imagens/image-14.png" width="60%"></p>
+<p align="center"><img src="imagens/image-15.png" width="60%"></p>
 
 IP público da instância:
-<p align="center"><img src="image-16.png" width="60%"></p>
+<p align="center"><img src="imagens/image-16.png" width="60%"></p>
 
 Acessando a instância:
 
@@ -85,7 +85,7 @@ sudo apt update
 sudo apt install nginx
 ```
 
-<p align="center"><img src="image-17.png" width="60%"></p>
+<p align="center"><img src="imagens/image-17.png" width="60%"></p>
 
 ---
 
@@ -155,9 +155,9 @@ Substitua pelo conteúdo abaixo:
 2. Envie `/start` e depois `/newbot`
 3. Defina nome e username para seu bot
 
-<p align="center"><img src="image-18.png" width="60%"></p>
-<p align="center"><img src="image-20.png" width="60%"></p>
-<p align="center"><img src="image-21.png" width="60%"></p>
+<p align="center"><img src="imagens/image-18.png" width="60%"></p>
+<p align="center"><img src="imagens/image-20.png" width="60%"></p>
+<p align="center"><img src="imagens/image-21.png" width="60%"></p>
 
 Para obter o `chat_id`:
 1. Envie qualquer mensagem para seu bot
@@ -232,7 +232,7 @@ sudo systemctl stop nginx
 ```
 
 ### Verificar o alerta no Telegram:
-<p align="center"><img src="image-22.png" width="60%"></p>
+<p align="center"><img src="imagens/image-22.png" width="60%"></p>
 
 ### Verificar o conteúdo do log:
 
@@ -249,8 +249,11 @@ Exemplo:
 2025-03-27 02:38:01 - OK (status 200)
 ```
 
+---
+
 ## 9. Possíveis Melhorias Futuras
 
 Como aprimoramento, seria interessante automatizar toda a configuração da instância via **User Data**, garantindo que o Nginx, a página HTML e o script de monitoramento já sejam iniciados assim que a máquina for criada. Outra melhoria viável seria a criação de um template em **CloudFormation** para provisionar toda a infraestrutura de forma reproduzível e padronizada.
 
+---
 
