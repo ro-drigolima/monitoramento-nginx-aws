@@ -147,7 +147,8 @@ Substitua pelo conteúdo abaixo:
 </html>
 ```
 
----
+![image](https://github.com/user-attachments/assets/8a64b3c9-5369-4154-a483-5cd2aa6684ec)
+
 
 ## 5. Criação do Bot no Telegram
 
@@ -240,7 +241,7 @@ sudo systemctl stop nginx
 cat /home/ubuntu/monitoramento.log
 ```
 
-Exemplo:
+Saída:
 
 ```bash
 2025-03-27 02:30:20 - OK (status 200)
